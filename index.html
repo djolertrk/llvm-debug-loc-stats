@@ -4,6 +4,292 @@
 <header>
 </header>
 
+  <head>
+    <title>LLVM Debug Info</title>
+    <meta name="description" content="Location coverage." />
+
+    <!-- amCharts javascript sources -->
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+
+    <!-- amCharts javascript code -->
+    <script type="text/javascript">
+      AmCharts.makeChart("chartdiv",
+        {
+          "type": "serial",
+          "categoryField": "category",
+          "startDuration": 1,
+          "theme": "default",
+          "categoryAxis": {
+            "gridPosition": "start"
+          },
+          "trendLines": [],
+          "graphs": [
+            {
+              "alphaField": "llvm-10",
+              "balloonText": "[[title]] of [[category]]:[[value]]",
+              "bulletField": "llvm-10",
+              "bulletSizeField": "llvm-10",
+              "closeField": "llvm-10",
+              "colorField": "llvm-10",
+              "columnIndexField": "llvm-10",
+              "columnWidth": 0.52,
+              "customBulletField": "llvm-10",
+              "dashLengthField": "llvm-10",
+              "descriptionField": "llvm-10",
+              "errorField": "llvm-10",
+              "fillAlphas": 1,
+              "fillColorsField": "llvm-10",
+              "gapField": "llvm-10",
+              "highField": "llvm-10",
+              "id": "llvm-6",
+              "labelColorField": "llvm-10",
+              "lineColorField": "llvm-10",
+              "lowField": "llvm-10",
+              "openField": "llvm-10",
+              "patternField": "llvm-10",
+              "title": "llvm6",
+              "type": "column",
+              "valueField": "llvm-6",
+              "xField": "llvm-10",
+              "yField": "llvm-10"
+            },
+            {
+              "alphaField": "llvm-10",
+              "balloonText": "[[title]] of [[category]]:[[value]]",
+              "bulletField": "llvm-10",
+              "bulletSizeField": "llvm-10",
+              "closeField": "llvm-10",
+              "colorField": "llvm-10",
+              "columnIndexField": "llvm-10",
+              "columnWidth": 0.46,
+              "customBulletField": "llvm-10",
+              "dashLengthField": "llvm-10",
+              "descriptionField": "llvm-10",
+              "errorField": "llvm-10",
+              "fillAlphas": 1,
+              "fillColorsField": "llvm-10",
+              "gapField": "llvm-10",
+              "highField": "llvm-10",
+              "id": "llvm-7",
+              "labelColorField": "llvm-10",
+              "lineAlpha": 0,
+              "lineColorField": "llvm-10",
+              "lowField": "llvm-10",
+              "openField": "llvm-10",
+              "patternField": "llvm-10",
+              "title": "llvm7",
+              "type": "column",
+              "valueField": "llvm-7",
+              "xField": "llvm-10",
+              "yField": "llvm-10"
+            },
+            {
+              "alphaField": "llvm-10",
+              "bulletField": "llvm-10",
+              "bulletSizeField": "llvm-10",
+              "closeField": "llvm-10",
+              "colorField": "llvm-10",
+              "columnIndexField": "llvm-10",
+              "columnWidth": 0.45,
+              "customBulletField": "llvm-10",
+              "dashLengthField": "llvm-10",
+              "descriptionField": "llvm-10",
+              "errorField": "llvm-10",
+              "fillAlphas": 1,
+              "fillColorsField": "llvm-10",
+              "gapField": "llvm-10",
+              "highField": "llvm-10",
+              "id": "llvm-8",
+              "labelColorField": "llvm-10",
+              "lineColorField": "llvm-10",
+              "lowField": "llvm-10",
+              "openField": "llvm-10",
+              "patternField": "llvm-10",
+              "title": "llvm8",
+              "type": "column",
+              "valueField": "llvm-8",
+              "xField": "llvm-10",
+              "yField": "llvm-10"
+            },
+            {
+              "alphaField": "llvm-10",
+              "bulletField": "llvm-10",
+              "bulletSizeField": "llvm-10",
+              "closeField": "llvm-10",
+              "colorField": "llvm-10",
+              "columnIndexField": "llvm-10",
+              "columnWidth": 0.46,
+              "customBulletField": "llvm-10",
+              "dashLengthField": "llvm-10",
+              "descriptionField": "llvm-10",
+              "errorField": "llvm-10",
+              "fillAlphas": 1,
+              "fillColorsField": "llvm-10",
+              "gapField": "llvm-10",
+              "highField": "llvm-10",
+              "id": "llvm-9",
+              "labelColorField": "llvm-10",
+              "lineColorField": "llvm-10",
+              "lowField": "llvm-10",
+              "openField": "llvm-10",
+              "patternField": "llvm-10",
+              "title": "llvm9",
+              "type": "column",
+              "valueField": "llvm-9",
+              "xField": "llvm-10",
+              "yField": "llvm-10"
+            },
+            {
+              "columnWidth": 0.51,
+              "fillAlphas": 1,
+              "id": "llvm10",
+              "title": "llvm10",
+              "type": "column",
+              "valueField": "llvm 10"
+            },
+            {
+              "columnWidth": 0.48,
+              "fillAlphas": 1,
+              "id": "gcc9",
+              "title": "gcc9",
+              "type": "column",
+              "valueField": "gcc9"
+            }
+          ],
+          "guides": [],
+          "valueAxes": [
+            {
+              "id": "ValueAxis-1",
+              "title": "number of variables in the location buckets"
+            }
+          ],
+          "allLabels": [],
+          "balloon": {},
+          "legend": {
+            "enabled": true,
+            "useGraphSettings": true
+          },
+          "titles": [
+            {
+              "id": "Title-1",
+              "text": "Debug Location Coverage"
+            }
+          ],
+          "dataProvider": [
+            {
+              "category": "0%",
+              "llvm-6": "8842",
+              "llvm-7": "37780",
+              "llvm-8": "95969",
+              "llvm-9": "71696",
+              "llvm 10": "72431",
+              "gcc9": "125396"
+            },
+            {
+              "category": "(0%,10%)",
+              "llvm-6": "12370",
+              "llvm-7": "12708",
+              "llvm-8": "10851",
+              "llvm-9": "9495",
+              "llvm 10": "8973",
+              "gcc9": "6225"
+            },
+            {
+              "category": "[10%,20%)",
+              "llvm-6": "10972",
+              "llvm-7": "12044",
+              "llvm-8": "10416",
+              "llvm-9": "9054",
+              "llvm 10": "8615",
+              "gcc9": "6975"
+            },
+            {
+              "category": "[20%,30%)",
+              "llvm-6": "10121",
+              "llvm-7": "11486",
+              "llvm-8": "11478",
+              "llvm-9": "8680",
+              "llvm 10": "7923",
+              "gcc9": "6742"
+            },
+            {
+              "category": "[30%,40%)",
+              "llvm-6": "7882",
+              "llvm-7": "9519",
+              "llvm-8": "8616",
+              "llvm-9": "7701",
+              "llvm 10": "7494",
+              "gcc9": "7730"
+            },
+            {
+              "category": "[40%,50%)",
+              "llvm-6": "8465",
+              "llvm-7": "9647",
+              "llvm-8": "9026",
+              "llvm-9": "7914",
+              "llvm 10": "7022",
+              "gcc9": "7673"
+            },
+            {
+              "category": "[50%, 60%)",
+              "llvm-6": "8048",
+              "llvm-7": "10533",
+              "llvm-8": "9828",
+              "llvm-9": "8079",
+              "llvm 10": "7437",
+              "gcc9": "10612"
+            },
+            {
+              "category": "[60%,70%)",
+              "llvm-6": "7470",
+              "llvm-7": "9550",
+              "llvm-8": "8878",
+              "llvm-9": "7684",
+              "llvm 10": "7723",
+              "gcc9": "11427"
+            },
+            {
+              "category": "[70%,80%)",
+              "llvm-6": "7000",
+              "llvm-7": "8999",
+              "llvm-8": "8401",
+              "llvm-9": "8482",
+              "llvm 10": "9476",
+              "gcc9": "12116"
+            },
+            {
+              "category": "[80%,90%)",
+              "llvm-6": "8812",
+              "llvm-7": "10543",
+              "llvm-8": "10591",
+              "llvm-9": "10268",
+              "llvm 10": "10070",
+              "gcc9": "32421"
+            },
+            {
+              "category": "[90%,100%)",
+              "llvm-6": "17451",
+              "llvm-7": "17803",
+              "llvm-8": "18550",
+              "llvm-9": "16964",
+              "llvm 10": "17350",
+              "gcc9": "17779"
+            },
+            {
+              "category": "100%",
+              "llvm-6": "97969",
+              "llvm-7": "126134",
+              "llvm-8": "131291",
+              "llvm-9": "182194",
+              "llvm 10": "191724",
+              "gcc9": "183211"
+            }
+          ]
+        }
+      );
+    </script>
+
 <body>
 
   <h1> LLVM - Debug Location Quality </h1>
@@ -17,7 +303,7 @@
   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
   <article>
   <h1> LLVM 6.0 Release </h1>
-  
+
   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
       <article>
           <h3> Location Coverage Graphs </h3>
@@ -30,7 +316,7 @@
 
   <article>
   <h1> LLVM 7.0 Release </h1>
-  
+
   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
       <article>
           <h3> Location Coverage Graphs </h3>
@@ -64,7 +350,7 @@
 
   <article>
   <h1> LLVM 9.0 Release </h1>
-  
+
   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
       <article>
           <h3> Location Coverage Graphs </h3>
@@ -81,7 +367,7 @@
 
   <article>
   <h1> LLVM 10.0 Release </h1>
-  
+
   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
       <article>
           <h3> Location Coverage Graphs </h3>
@@ -98,7 +384,7 @@
 
   <article>
   <h1> GCC 9 Release </h1>
-  
+
   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
       <article>
           <h3> Location Coverage Graphs </h3>
@@ -110,6 +396,16 @@
             <h4> $ llvm-locstats --compare gdb-build-with-llvm10.0 gdb-build-with-gcc-9 </h4>
             <img src="compare-gcc-9-llvm10.png" alt="locstat1">
           </article>
+      </article>
+  </article>
+
+  <article>
+  <h1> Cumulative result </h1>
+  <p> NOTE: The interactive graph was generated using the <i>amcharts</i> tool with the data produced by <i>llvm-locstats</i>.</p>
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <article>
+          <h3> Location Coverage Graphs </h3>
+          <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
       </article>
   </article>
 
